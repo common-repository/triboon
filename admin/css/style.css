@@ -1,0 +1,317 @@
+* {
+    font: inherit;
+}
+
+.triboon-modal {
+    display: none;
+    position: fixed;
+    z-index: 100000000000000000;
+    direction: rtl;
+    padding-top: 40px;
+    padding-left: 80px;
+    left: 0;
+    top: 0;
+    text-align: right;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.triboon-modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 582px;
+    height: 230px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+.triboon-close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    top: 10px;
+    left: 20px;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 13px;
+    background-color: #8F000E;
+    color: white;
+    align-content: center;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#triboon_reject_modal .triboon-modal-header {
+    padding: 2px 13px;
+    background-color: #8F000E;
+    color: white;
+    align-content: center;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#triboon_category_modal .triboon-modal-header {
+    padding: 2px 13px;
+    background-color: #128f76;
+    color: white;
+    align-content: center;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.triboon-modal-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.triboon-modal-body label {
+    padding-top: 20px;
+    padding-bottom: 12px;
+    cursor: auto;
+    font-size: 16px;
+}
+
+#triboon_txt {
+    border: 1px solid #d2d6de;
+    border-radius: 0 .25rem .25rem 0;
+    font-size: 14px;
+    padding: 5px;
+    height: 35px;
+    width: 550px;
+    margin: 0;
+}
+
+#triboon_txt2 {
+    border: 1px solid #d2d6de;
+    border-radius: 0 .25rem .25rem 0;
+    font-size: 14px;
+    padding: 5px;
+    height: 35px;
+    width: 550px;
+    max-width: 550px;
+    margin: 0;
+}
+
+.triboon-modal-header h2 {
+    color: white;
+}
+
+.triboon-modal-body select {
+    top: 0px;
+    left: 0px;
+    font-size: 14px;
+    border: none;
+    width: 120px;
+    margin: 0;
+}
+
+.triboon-modal-body select:focus,
+.select-editable input:focus {
+    outline: none;
+}
+
+.triboon-modal-body {
+    padding: 10px 16px 0 16px;
+}
+
+.triboon-input {
+    width: 100%;
+}
+
+.triboon-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    left: 10px;
+    bottom: 5px;
+    padding: 15px 32px;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#triboon_submit_reject {
+    color: white;
+    font-size: 1rem;
+    background-color: #014559;
+    border-color: #014559;
+    cursor: pointer !important;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: .225rem .3rem;
+    border-radius: .25rem;
+}
+
+#triboon_submit_category {
+    color: white;
+    font-size: 1rem;
+    background-color: #014559;
+    border-color: #014559;
+}
+
+.triboon-modal-footer {
+    padding: 20px 16px;
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+table.triboon .comment-item .row-actions,
+.mobile .row-actions,
+.no-js .row-actions,
+.row-actions.visible,
+tr .row-actions {
+    position: static;
+}
+
+tr:hover .triboon-btn-invisible {
+    display: inline-block !important;
+}
+
+.triboon-btn-invisible {
+    display: none !important;
+}
+
+.triboon-primary-image-col {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+#triboon .row-actions {
+    margin-top: 1rem;
+}
+
+#triboon .row-actions a {
+    padding: 3px 7px;
+    border-radius: 2px;
+}
+
+#triboon .row-actions span a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.triboon-settings {
+    direction: rtl;
+    text-align: center;
+}
+
+.triboon-settings span {
+    font-size: 14px;
+}
+
+.triboon-container {
+    margin: 10rem;
+    padding: 2rem;
+    /* border: 1px solid gray; */
+    background-color: white;
+    border-radius: .25rem;
+}
+
+.triboon-settings {
+    padding: 20px;
+}
+
+.triboon-settings .button {
+    font-size: 1rem;
+    color: white;
+    background-color: #014559;
+    border-color: #014559;
+}
+
+.triboon-settings input[type='text'] {
+    border: 1px solid #d2d6de;
+    border-radius: 0 .25rem .25rem 0;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.triboon-settings #token {
+    margin-bottom: 1rem;
+}
+
+.triboon-states {
+    text-decoration: none;
+    color: black !important;
+    padding: 8px !important;
+    font-size: 18px;
+    /* background-color: rgba(0, 0, 0, 0.4); */
+}
+
+.triboon-state-active {
+    color: white !important;
+    border-bottom: 2px solid gray;
+    background-color: #014559;
+    border-radius: 5px;
+}
+
+.triboon-states .awaiting-mod {
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    margin: 1px 2px -1px 0;
+    padding: 0 5px;
+    min-width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    background-color: #d63638;
+    color: #fff;
+    font-size: 11px;
+    line-height: 1.6;
+    text-align: center;
+    z-index: 26;
+}
+
+.triboon-download-btn {
+    color: #fff !important;
+    background-color: #014559 !important;
+    border-color: #014559 !important;
+    cursor: pointer !important;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: .225rem .3rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !important;
+}
+
+.triboon-download-btn:hover {
+    background-color: #012833 !important;
+}
+
+table.wp-list-table.triboon td {
+    vertical-align: middle;
+    text-align: center;
+}
